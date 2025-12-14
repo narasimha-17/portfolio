@@ -209,6 +209,6 @@ textarea:not(:placeholder-shown) + .floating-label {
   .floating-input:not(:placeholder-shown) ~ .floating-label {
     @apply -translate-y-3 scale-75 text-indigo-300 font-semibold;
   }
-
+/**/
   
 }
