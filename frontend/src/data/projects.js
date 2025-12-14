@@ -1,6 +1,10 @@
 // 1. Import all images at the top
 // Make sure these file names match EXACTLY what is in your assets folder
 import agroImg from '../assets/agro-care.png';
+import brainTumorImg from '../assets/images.png';
+import retinaImg from '../assets/retina.png';
+import waterQualityImg from '../assets/8382828.png';
+import ragPrepareIQImg from '../assets/download.png';
 
 
 export default [
@@ -19,7 +23,7 @@ export default [
     summary: 'UNet segmentation + classification pipeline',
     tech: ['Keras','UNet','TensorFlow'],
     details: 'Segmentation pipeline for MRI scans; preprocessing & augmentation workflows.',
-    img: null,
+    img: brainTumorImg, // <--- Use the variable (no quotes)
     code: '#'
   },
   {
@@ -28,7 +32,7 @@ export default [
     summary:'Retina image classification for diabetic retinopathy & glaucoma',
     tech:['PyTorch','Transfer Learning'],
     details:'Transfer learning pipeline for retina disease classification.',
-    img: null,
+    img: retinaImg,
     code:'#'
   },
   {
@@ -37,7 +41,7 @@ export default [
     summary:'Real-time metrics dashboard for pH, TDS, turbidity',
     tech:['Flask','React'],
     details:'Sensors integration and dashboard for water quality monitoring.',
-    img: null,
+    img: waterQualityImg,
     code:'#'
   },
   {
@@ -46,7 +50,7 @@ export default [
     summary:'Retrieval-Augmented Generation study assistant',
     tech:['Flask','FAISS','HuggingFace'],
     details:'RAG system with vector DB and LLM summarization.',
-    img: null,
+    img: ragPrepareIQImg,
     code:'#'
   }
 ];
