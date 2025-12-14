@@ -6,7 +6,7 @@ export default function Hero(){
       {/* left */}
       <div className="space-y-6">
         <h1 className="text-5xl font-extrabold leading-tight">
-          We Are Solution Oriented <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary1 to-accent">Digital</span> Engineers
+          Hi, I'm Narasimha<span className="bg-clip-text text-transparent bg-gradient-to-r from-primary1 to-accent">Digital</span> 
         </h1>
 
         <p className="text-slate-600 max-w-xl">
@@ -20,11 +20,11 @@ export default function Hero(){
 
         <div className="flex gap-8 mt-6">
           <div>
-            <div className="text-2xl font-bold text-primary1">15+</div>
+            <div className="text-2xl font-bold text-primary1">10+</div>
             <div className="text-sm text-slate-600">Major Projects</div>
           </div>
           <div>
-            <div className="text-2xl font-bold text-accent">50+</div>
+            <div className="text-2xl font-bold text-accent">20+</div>
             <div className="text-sm text-slate-600">Collaborations</div>
           </div>
         </div>

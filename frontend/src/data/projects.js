@@ -5,7 +5,7 @@ export default [
     summary: 'AI Farming Assistant — disease detection & irrigation scheduler',
     tech: ['Python','Flask','TensorFlow','React'],
     details: 'Built crop disease detection, pest ID, and weather-driven suggestions. Collaborators: Manas, Vinay Krishna Reddy.',
-    img: '/projects/agrocare.jpg',
+    img: 'IMAGES/agro-care.png',
     code: '#'
   },
   {
