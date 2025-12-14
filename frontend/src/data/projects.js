@@ -1,10 +1,7 @@
 // 1. Import all images at the top
 // Make sure these file names match EXACTLY what is in your assets folder
 import agroImg from '../assets/agro-care.png';
-import brainTumorImg from '../assets/brain-tumor.jpg';
-import retinaImg from '../assets/retina.jpg';
-import waterImg from '../assets/water-quality.jpg';
-import ragImg from '../assets/rag.jpg';
+
 
 export default [
   {
