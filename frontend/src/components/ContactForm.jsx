@@ -19,7 +19,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-slate-50 relative overflow-hidden">
+    <section id="contact" className="py-24 relative overflow-hidden">
       
       {/* Container - Wider for split layout */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
