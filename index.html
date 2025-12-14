@@ -1,12 +1,287 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Budde Narasimha — Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <style>
+body{
+    
+background-color: whitesmoke;
+}
+        #image {
+            border-radius: 50%;
+            
+            }
+            .img{
+                padding-left: 450px;
+                padding-top: 20px;
+            }
+        #projs {
+            display: inline-flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding-left: 20px;
+            padding-right: 20px;
+            gap: 20px;
+            padding-top: 20px;
+            padding-bottom: 30px;
+            }
+            
+        .contact {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 0 auto;
+            }
+            .skill{
+                padding-right: 150px;
+                padding-left: 50px;
+                
+                justify-content: space-around;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            h2{
+                text-align: center;
+                color: rgb(44, 70, 147);
+                padding-top: 20px;
+                padding-bottom: 30px;
+                text-transform:capitalize
+
+            }
+            .progress-bar{
+                background-color: rgb(193, 187, 96);
+            }
+            #id{
+               justify-content: center;
+               padding-left: 450px;
+            }
+            .p1{
+                padding-left: 250px;
+                padding-right: 250px;
+                padding-bottom: 30px;
+                padding-top: 30px;
+                text-shadow: 1.5px 1.5px 8px rgb(69, 103, 207);
+            }
+            .ach{
+                display: inline-flex;
+                justify-content:center;
+                flex-wrap: wrap;
+                padding-left: 350px;
+                padding-right: 250px;
+                padding-bottom: 30px;
+                padding-top: 30px;
+                
+                gap: 20px;
+               
+            }
+            .footer{
+                text-align: center;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                background-color: rgb(44, 70, 147);
+                color: white;
+            }
+            #id{
+                padding-left: 547px;
+                padding-top: 20px;
+                padding-bottom: 50px;
+            }
+            .internships{
+                display: inline-flex;
+                justify-content:center;
+                flex-wrap: wrap;
+                padding:auto auto auto auto;
+                padding-left: 10px;
+                gap: 20px;
+                
+            }
+     </style>
+</head>
+<body>
+    <header>
+        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">NARASIMHA</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#about">About</a>
+                  <a class="nav-link" href="#skills">Skills</a>
+                  <a class="nav-link" href="#projects">Projects</a>
+                  <a class="nav-link" href="#achivements">Achivements</a>
+                  <a class="nav-link" href="#contact">Contact</a>
+                  <a class="nav-link" href="#resume">Resume</a>
+                  <a class="nav-link" href="#internships">Internships</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section id="about">
+            <div class="img">
+            <img id="image"  src="simha photo.jpg" alt="" width="350" height="350">
+            </div>
+            <h2>About Me</h2>
+            <p class="p1"> An enthusiastic and methodical individual with a strong passion for computer science and its applications in real-world . Currently, you're interning at TechSaksham, working on a diabetes prediction project, leveraging keen interest in machine learning.
+                skills include a deep understanding of programming languages like C++, Python, and Java, and expertise in data structures, algorithms, and predictive modeling. You've demonstrated your problem-solving capabilities by securing 3rd prize in the IITM WeStart Hackathon. With a meticulous approach to learning, you strive for clarity and excellence in all your endeavors
+            </p>
+        </section>
+       
+       
+
+        <section id="skills">
+            <h2>Skills</h2>
+           <div class="skill">
+            
+            <h5>HTML</h5>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 75%">75%</div>
+              </div>
+              <br>
+              <H5>MACHINE LEARNING</H5>
+              <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 50%">50%</div>
+              </div>
+                <br>
+                <H5>PYTHON</H5>
+              <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 75%">75%</div>
+              </div>
+              <br>
+              <H5>WEB DEVELOPMENT</H5>
+              <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 50%">50%</div>
+              </div><br>
+              <H5>JAVA</H5>
+              <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 25%">25%</div>
+              </div><br>
+            </div>
+                      
+              
+
+            
+        
+        </section>
+
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="pro">
+            <div id="projs">
+            <div class="card" style="width: 18rem;">
+                <img src="Healthcare-1-1024x1024.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Health care Monitering System</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://github.com/narasimha-17/diabetes" class="btn btn-primary">LOOK IT</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="iris.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Iris Flower Detection</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://github.com/narasimha-17/Logistic-Regression/blob/main/Iris%20Flower%20Classification.py.ipynb" class="btn btn-primary">LOOK IT</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="job hirng.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Job Hiring Website</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">LOOK IT</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="customer.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Customer Behaviour Analysis</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://github.com/narasimha-17/Logistic-Regression/blob/main/customer_behaviour.ipynb" class="btn btn-primary">LOOK IT</a>
+                </div>
+
+                
+              </div>
+              </div>
+              </div>
+        </section>
+
+        <section id="internships">
+            <h2>Internships</h2>
+            <div class="internships">
+               
+                <div class="card" style="width: 25rem;">
+                    <img src="techsaksham logo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">TECHSAKSHAM</h5>
+                      <p class="card-text">Internship at TechSaksham on a diabetes prediction project.</p>
+                      </div>
+                      </div>
+
+                  <div class="card" style="width: 25rem;">
+                    <img src="download (6).png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">GOOGLE VIRTUAL INTERNSHIP</h5>
+                    <p class="card-text">Virtual Internship at Google through EduSkills</p>
+                    </div>
+                  </div>
+        </section>
+
+        <section id="achivements">
+            <h2>Achievements</h2>
+            <div class="ach">
+            <div id="projs">
+            <div class="card" style="width: 30rem;">
+                <img src="iitm hackthon.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Hackathon</h5>
+                  <p class="card-text">Secured 3rd prize in the IITM WeStart Hackathon.</p>
+                </div>
+              </div>
+            </div>
+         </section>
+
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class = "contact">
+                <label for="Name" class="form-label">Name</label>
+                <input type="text"  class="form-label" id="Name" placeholder="Enter your Name">
+              </div>
+
+              <div class = "contact">
+                <label for="phoneno" class="form-label">Phone Number</label>
+                <input type="number"  id="Name" placeholder="Enter your Phone Number" width="100px">
+              </div>
+              
+              <div class="contact">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-label" id="email" placeholder="name@example.com"><br>
+                <button class="btn btn-primary">Submit</button>
+              </div>
+            
+            </section>
+        </section>
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <div id="id">
+            <a href="https://drive.google.com/file/d/1Ax8RmNTTezjK2Ea8klCHIT_fq9_T5gI9/view?usp=drivesdk" class="btn btn-primary">Download Resume</a>
+            </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2023 Budde Narasimha Surya Teja. All rights reserved.</p>
+    </footer>
+</body>
 </html>
