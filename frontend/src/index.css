@@ -192,3 +192,26 @@ textarea:not(:placeholder-shown) + .floating-label {
   font-size: 12px;
   color: #6366f1;
 }
+
+@layer components {
+  /* The actual input field */
+  .floating-input {
+    @apply w-full p-4 pt-6 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 text-white focus:border-indigo-400 focus:ring-0 transition-all duration-300 outline-none;
+  }
+
+  /* The label initial state */
+  .floating-label {
+    @apply absolute left-4 top-4 text-slate-400 text-base transition-all duration-300 pointer-events-none origin-[0];
+  }
+
+  /* Move label up when input focused or has content */
+  .floating-input:focus ~ .floating-label,
+  .floating-input:not(:placeholder-shown) ~ .floating-label {
+    @apply -translate-y-3 scale-75 text-indigo-300 font-semibold;
+  }
+
+  /* Subtle ambient background animations */
+  .bg-glow-blob {
+      @apply absolute rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow;
+  }
+}
