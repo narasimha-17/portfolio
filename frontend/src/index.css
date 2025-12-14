@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* base page */
+:root{
+  --cream: #fff7f2;
+}
+body {
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+  background-size: 400% 400%;
+  animation: neonBG 10s ease infinite;
+  @apply text-slate-900 antialiased;
+  font-family: Inter, ui-sans-serif, system-ui;
+}
+
+@keyframes neonBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* glass-ish container used in hero */
+.hero-card {
+  @apply bg-white rounded-[28px] p-6 shadow-[0_12px_30px_rgba(15,23,42,0.06)] border border-white/60;
+}
+
+/* CTA gradient buttons */
+.btn-primary {
+  @apply inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold text-white shadow-md;
+  background: linear-gradient(90deg,#7c3aed 0%, #ff6b6b 60%);
+}
+.btn-outline {
+  @apply inline-flex items-center justify-center px-5 py-3 rounded-xl border border-slate-200 text-slate-800 bg-white;
+}
+
+/* small helpers */
+.pulse {
+  animation: pulse 2.2s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(1); opacity:1 }
+  50% { transform: scale(1.03); opacity:0.9 }
+  100% { transform: scale(1); opacity:1 }
+}
+.card {
+  @apply bg-white rounded-xl p-5 shadow-sm border border-slate-100;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+/* Perfect infinite marquee */
+.marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-inner {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 25s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Emoji movement inside the card */
+.emoji-anim {
+  animation: float 2.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+/* Infinite marquee */
+.marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-inner {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 25s linear infinite;
+}
+
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Emoji float animation */
+.emoji-anim {
+  animation: float 2.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+/* Infinite marquee */
+.marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-inner {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 25s linear infinite;
+}
+/* Floating emoji */
+
+
+@keyframes zoomPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+.animate-zoom {
+  animation: zoomPulse 2.5s ease-in-out infinite;
+}
+/* Floating glass navbar animation */
+.glass-nav {
+  animation: navFloat 6s ease-in-out infinite;
+}
+
+@keyframes navFloat {
+  0%   { transform: translate(-50%, 0); }
+  50%  { transform: translate(-50%, -6px); }
+  100% { transform: translate(-50%, 0); }
+}
+/* Fade + slide + zoom animation */
+@keyframes recogFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.recog-card {
+  opacity: 0;
+  animation: recogFade 0.8s ease forwards;
+}
+
+/* Soft glowing emoji animation */
+@keyframes glowPulse {
+  0% { transform: scale(1); filter: brightness(1); }
+  50% { transform: scale(1.12); filter: brightness(1.35); }
+  100% { transform: scale(1); filter: brightness(1); }
+}
+
+.animate-glow {
+  animation: glowPulse 2s ease-in-out infinite;
+}
+.floating-label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  color: #475569;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+input:focus + .floating-label,
+textarea:focus + .floating-label,
+input:not(:placeholder-shown) + .floating-label,
+textarea:not(:placeholder-shown) + .floating-label {
+  top: 6px;
+  font-size: 12px;
+  color: #6366f1;
+}
