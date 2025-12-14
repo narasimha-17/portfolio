@@ -209,6 +209,9 @@ textarea:not(:placeholder-shown) + .floating-label {
   .floating-input:not(:placeholder-shown) ~ .floating-label {
     @apply -translate-y-3 scale-75 text-indigo-300 font-semibold;
   }
-/**/
-  
+
+  /* Subtle ambient background animations */
+  .bg-glow-blob {
+      @apply absolute rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow;
+  }
 }
