@@ -2,7 +2,7 @@
 // Make sure these file names match EXACTLY what is in your assets folder
 import agroImg from '../assets/agro-care.png';
 import brainTumorImg from '../assets/images.png';
-import retinaImg from '../assets/retina.png';
+import retinaImg from '../assets/retina.jpg';
 import waterQualityImg from '../assets/8382828.png';
 import ragPrepareIQImg from '../assets/download.png';
 
