@@ -1,6 +1,6 @@
 // 1. Import all images at the top
 // Make sure these file names match EXACTLY what is in your assets folder
-import agroImg from '../assets/agro-care.png';
+import agroImg from './assets/agro-care.png';
 
 
 export default [
