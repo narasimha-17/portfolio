@@ -20,16 +20,14 @@ export default function ContactForm() {
   };
 
   return (
-    // MATCHING SITE THEME: Light background with subtle gradient
     <section id="contact" className="py-24 relative overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-purple-50">
       
-      {/* Decorative Blobs (Subtle for Light Mode) */}
+      {/* Background Blobs */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
-          {/* MATCHING TYPOGRAPHY: Slate-900 for headings */}
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 pb-2">
             Get In Touch
           </h2>
@@ -38,8 +36,8 @@ export default function ContactForm() {
           </p>
         </div>
 
-        {/* Glass Card - Light Version */}
-        <div className="max-w-lg mx-auto bg-white/70 backdrop-blur-xl border border-white/50 rounded-3xl shadow-xl p-8 md:p-10">
+        {/* CLEAN GLASS CARD: Removed 'border border-white/50' */}
+        <div className="max-w-lg mx-auto bg-white/70 backdrop-blur-xl rounded-3xl shadow-xl p-8 md:p-10">
           
           <form onSubmit={handleSubmit} className="space-y-6">
             
