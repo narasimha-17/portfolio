@@ -20,28 +20,30 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="py-24 relative overflow-hidden bg-slate-900">
+    // MATCHING SITE THEME: Light background with subtle gradient
+    <section id="contact" className="py-24 relative overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-purple-50">
       
-      {/* 1. Background decorative elements (Using standard classes only) */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+      {/* Decorative Blobs (Subtle for Light Mode) */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 via-purple-200 to-white pb-2">
+          {/* MATCHING TYPOGRAPHY: Slate-900 for headings */}
+          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 pb-2">
             Get In Touch
           </h2>
-          <p className="mt-4 text-slate-400 text-lg max-w-2xl mx-auto">
+          <p className="mt-4 text-slate-600 text-lg max-w-2xl mx-auto">
             Have a project in mind? Let's turn your ideas into reality.
           </p>
         </div>
 
-        {/* 2. Glass Card */}
-        <div className="max-w-lg mx-auto bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-8 md:p-10">
+        {/* Glass Card - Light Version */}
+        <div className="max-w-lg mx-auto bg-white/70 backdrop-blur-xl border border-white/50 rounded-3xl shadow-xl p-8 md:p-10">
           
           <form onSubmit={handleSubmit} className="space-y-6">
             
-            {/* Name Input with Tailwind-only Floating Label */}
+            {/* Name Input */}
             <div className="relative">
               <input
                 type="text"
@@ -49,14 +51,14 @@ export default function ContactForm() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
-                className="peer w-full px-4 pt-6 pb-2 rounded-xl bg-slate-800/50 border border-slate-700 text-white placeholder-transparent focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
+                className="peer w-full px-4 pt-6 pb-2 rounded-xl bg-white border border-slate-200 text-slate-900 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all shadow-sm"
                 placeholder="Name" 
               />
               <label
                 htmlFor="name"
-                className="absolute left-4 top-1 text-xs text-slate-400 transition-all 
-                peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-placeholder-shown:top-4 
-                peer-focus:top-1 peer-focus:text-xs peer-focus:text-indigo-400"
+                className="absolute left-4 top-1 text-xs text-slate-500 font-semibold transition-all 
+                peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-400 peer-placeholder-shown:top-4 peer-placeholder-shown:font-normal
+                peer-focus:top-1 peer-focus:text-xs peer-focus:text-indigo-600 peer-focus:font-semibold"
               >
                 Your Name
               </label>
@@ -70,14 +72,14 @@ export default function ContactForm() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="peer w-full px-4 pt-6 pb-2 rounded-xl bg-slate-800/50 border border-slate-700 text-white placeholder-transparent focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
+                className="peer w-full px-4 pt-6 pb-2 rounded-xl bg-white border border-slate-200 text-slate-900 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all shadow-sm"
                 placeholder="Email"
               />
               <label
                 htmlFor="email"
-                className="absolute left-4 top-1 text-xs text-slate-400 transition-all 
-                peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-placeholder-shown:top-4 
-                peer-focus:top-1 peer-focus:text-xs peer-focus:text-indigo-400"
+                className="absolute left-4 top-1 text-xs text-slate-500 font-semibold transition-all 
+                peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-400 peer-placeholder-shown:top-4 peer-placeholder-shown:font-normal
+                peer-focus:top-1 peer-focus:text-xs peer-focus:text-indigo-600 peer-focus:font-semibold"
               >
                 Your Email
               </label>
@@ -91,14 +93,14 @@ export default function ContactForm() {
                 onChange={(e) => setMessage(e.target.value)}
                 required
                 rows="4"
-                className="peer w-full px-4 pt-6 pb-2 rounded-xl bg-slate-800/50 border border-slate-700 text-white placeholder-transparent focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent resize-none transition-all"
+                className="peer w-full px-4 pt-6 pb-2 rounded-xl bg-white border border-slate-200 text-slate-900 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent resize-none transition-all shadow-sm"
                 placeholder="Message"
               ></textarea>
               <label
                 htmlFor="message"
-                className="absolute left-4 top-1 text-xs text-slate-400 transition-all 
-                peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-placeholder-shown:top-4 
-                peer-focus:top-1 peer-focus:text-xs peer-focus:text-indigo-400"
+                className="absolute left-4 top-1 text-xs text-slate-500 font-semibold transition-all 
+                peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-400 peer-placeholder-shown:top-4 peer-placeholder-shown:font-normal
+                peer-focus:top-1 peer-focus:text-xs peer-focus:text-indigo-600 peer-focus:font-semibold"
               >
                 Your Message
               </label>
@@ -112,7 +114,7 @@ export default function ContactForm() {
                 w-full py-4 rounded-xl font-bold text-lg text-white shadow-lg transition-all transform duration-200
                 ${status === "sent" 
                   ? "bg-green-600 cursor-default" 
-                  : "bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 hover:scale-[1.02] active:scale-95"
+                  : "bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 hover:shadow-xl hover:scale-[1.02] active:scale-95"
                 }
               `}
             >
