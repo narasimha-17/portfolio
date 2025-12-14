@@ -1,3 +1,11 @@
+// 1. Import all images at the top
+// Make sure these file names match EXACTLY what is in your assets folder
+import agroImg from '../assets/agro-care.png';
+import brainTumorImg from '../assets/brain-tumor.jpg';
+import retinaImg from '../assets/retina.jpg';
+import waterImg from '../assets/water-quality.jpg';
+import ragImg from '../assets/rag.jpg';
+
 export default [
   {
     id: 'agrocare',
@@ -5,7 +13,7 @@ export default [
     summary: 'AI Farming Assistant — disease detection & irrigation scheduler',
     tech: ['Python','Flask','TensorFlow','React'],
     details: 'Built crop disease detection, pest ID, and weather-driven suggestions. Collaborators: Manas, Vinay Krishna Reddy.',
-    img: 'frontend/src/assets/agro-care.png',
+    img: agroImg, // <--- Use the variable (no quotes)
     code: '#'
   },
   {
@@ -14,7 +22,7 @@ export default [
     summary: 'UNet segmentation + classification pipeline',
     tech: ['Keras','UNet','TensorFlow'],
     details: 'Segmentation pipeline for MRI scans; preprocessing & augmentation workflows.',
-    img: '/projects/brain-tumor.jpg',
+    img: brainTumorImg,
     code: '#'
   },
   {
@@ -23,7 +31,7 @@ export default [
     summary:'Retina image classification for diabetic retinopathy & glaucoma',
     tech:['PyTorch','Transfer Learning'],
     details:'Transfer learning pipeline for retina disease classification.',
-    img: '/projects/retina.jpg',
+    img: retinaImg,
     code:'#'
   },
   {
@@ -32,7 +40,7 @@ export default [
     summary:'Real-time metrics dashboard for pH, TDS, turbidity',
     tech:['Flask','React'],
     details:'Sensors integration and dashboard for water quality monitoring.',
-    img: '/projects/water-quality.jpg',
+    img: waterImg,
     code:'#'
   },
   {
@@ -41,7 +49,7 @@ export default [
     summary:'Retrieval-Augmented Generation study assistant',
     tech:['Flask','FAISS','HuggingFace'],
     details:'RAG system with vector DB and LLM summarization.',
-    img: '/projects/rag.jpg',
+    img: ragImg,
     code:'#'
   }
 ];
