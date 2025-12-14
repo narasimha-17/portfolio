@@ -1,6 +1,6 @@
 // 1. Import all images at the top
 // Make sure these file names match EXACTLY what is in your assets folder
-import agroImg from './assets/agro-care.png';
+import agroImg from '../assets/agro-care.png';
 
 
 export default [
@@ -19,7 +19,7 @@ export default [
     summary: 'UNet segmentation + classification pipeline',
     tech: ['Keras','UNet','TensorFlow'],
     details: 'Segmentation pipeline for MRI scans; preprocessing & augmentation workflows.',
-    img: brainTumorImg,
+    img: null,
     code: '#'
   },
   {
@@ -28,7 +28,7 @@ export default [
     summary:'Retina image classification for diabetic retinopathy & glaucoma',
     tech:['PyTorch','Transfer Learning'],
     details:'Transfer learning pipeline for retina disease classification.',
-    img: retinaImg,
+    img: null,
     code:'#'
   },
   {
@@ -37,7 +37,7 @@ export default [
     summary:'Real-time metrics dashboard for pH, TDS, turbidity',
     tech:['Flask','React'],
     details:'Sensors integration and dashboard for water quality monitoring.',
-    img: waterImg,
+    img: null,
     code:'#'
   },
   {
@@ -46,7 +46,7 @@ export default [
     summary:'Retrieval-Augmented Generation study assistant',
     tech:['Flask','FAISS','HuggingFace'],
     details:'RAG system with vector DB and LLM summarization.',
-    img: ragImg,
+    img: null,
     code:'#'
   }
 ];
