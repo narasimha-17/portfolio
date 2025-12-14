@@ -8,7 +8,7 @@
           {items.map(p=>(
             <div key={p.id} className="card hover:shadow-lg transition">
               <div className="h-40 rounded-lg overflow-hidden bg-slate-50 flex items-center justify-center">
-                {p.img ? <img src={p.img} alt={p.title} className="object-cover w-full h-full" /> : <div className="text-slate-400">Image</div>}
+                {p.img ? <img src={p.img} alt={p.title} className="object-contain w-full h-full p-2" /> : <div className="text-slate-400">Image</div>}
               </div>
               <h3 className="mt-4 font-semibold">{p.title}</h3>
               <p className="text-sm text-slate-600 mt-2">{p.summary}</p>
